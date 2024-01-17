@@ -1,21 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
-import Heading from "./Heading";
-import Deatails from "./Deatails";
 import About from "./About";
-import Help from "./Help";
 import Contant from "./contant";
-import Clients from "./clients";
-import Success from "./success";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavScrollExample from "./NavBar";
-import Pricing from "./Pricing";
 import Home from "./Home";
 import Contact from "./Contact";
 import Card from "./Card";
-import Team from "./Team";
-import Informatiom from "./Information";
 import Tax from "../componets/Big-Subjects/tax";
 import CriminalRepresentation from "./Big-Subjects/CriminalRepresentation";
 import Minors from "./Big-Subjects/Minors";
@@ -28,13 +19,10 @@ import Sex from "./Big-Subjects/sex";
 import Violnce from "./Big-Subjects/violnce";
 import Partners from "./Big-Subjects/purtners";
 import Gun from "./Big-Subjects/gun";
-import Footer from "./footer";
 function App() {
   let Componet;
   switch (window.location.pathname) {
-    case "/":
-      Componet = <App />;
-      break;
+    
     case "/contant":
       Componet = <Contant />;
       break;
@@ -52,6 +40,7 @@ function App() {
       break;
 
     default:
+      Componet = <Home />;
       break;
   }
 
