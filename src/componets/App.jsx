@@ -22,7 +22,9 @@ import Gun from "./Big-Subjects/gun";
 function App() {
   let Componet;
   switch (window.location.pathname) {
-    
+    case "/":
+      Componet = <App />;
+      break;
     case "/contant":
       Componet = <Contant />;
       break;
