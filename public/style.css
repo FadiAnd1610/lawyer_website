@@ -1,0 +1,1329 @@
+/*לבטל את הרווחים ולהפוך את כל העמוד בדיוק באמצע בלי הזזות מיותרות*/
+* {
+  padding: 0;
+  margin: 0;
+}
+/*
+
+/*HEADING STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*עושה מרווח בכל הצדדים (מותח את הצבע ברקע)
+.Heading-alements {
+  padding: 20px 20px;
+}
+/*  יוצר פה רווחים וגורם לכל האלמנטים להיות בדיוק באמצע ובשורה אחת ובנוסף החלפתי פה את את הצבע ברקע וגם של הטקסט*/
+.Heading-container .Heading-alements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(197, 192, 192, 0.889);
+  color: rgb(65, 61, 61);
+  gap: 150px;
+}
+/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
+.Heading-container .Heading-alements .Heading-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+}
+/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
+
+.Heading-container .Heading-alements .Heading-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+}
+/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
+
+.Heading-container .Heading-alements .Heading-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.Heading-container .Heading-alements .Heading-mail .email-link {
+  color: rgb(54, 51, 51);
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+.Heading-phone a {
+  color: rgb(54, 51, 51);
+  text-decoration: none;
+  font-weight: inherit;
+  background-color: none;
+  font-family: "Libre Baskerville", serif;
+}
+.Heading-location a {
+  color: rgb(54, 51, 51);
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  font-size: 19px;
+}
+
+/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
+
+.Heading-container .Heading-alements .Heading-opening-days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*DEATAILS STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.Details-container {
+  position: relative;
+}
+
+.Details-elements {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-imagee {
+  width: 100%;
+  height: 861px;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+
+.text-container {
+  position: absolute;
+  top: 25%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(230, 234, 255);
+  z-index: 1;
+}
+.text-container h1 {
+  font-size: 80px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+}
+.text-container h3 {
+  font-size: 50px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+}
+.text-container h4 {
+  font-size: 70px;
+  position: absolute;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title,
+.slogan,
+.sub-slogan {
+  font-size: 50px;
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeInUp 1.6s ease-in-out forwards;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: gray;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Details-container.active .background-image {
+  opacity: 1;
+}
+
+.Details-container.active .title,
+.Details-container.active .slogan,
+.Details-container.active .sub-slogan {
+  opacity: 1;
+}
+
+/*About componet style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.about {
+}
+
+.container {
+  display: flex;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.aboutImg {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  margin-top: 80px;
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(63, 61, 61, 0.1);
+}
+
+.information {
+  flex: 1;
+  padding: 20px;
+}
+
+.h1style {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.h3style {
+  font-size: 18px;
+  margin-top: 0;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.info2 p {
+  text-align: right;
+  color: rgb(58, 57, 57);
+  font-size: 20px;
+}
+.about-h1 {
+  text-align: center;
+}
+
+/* Optional: Add some spacing between containers */
+.container + .container {
+  margin-top: 40px;
+}
+
+.scale-on-hover1 {
+  transition: transform 1.8s ease-in-out; /* Add a smooth transition effect on the transform property */
+}
+
+/* Apply the scale transformation on hover */
+.scale-on-hover1:hover {
+  transform: scale(1.1);
+}
+
+/*Help componet style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* Help.css */
+
+.Help-container {
+  text-align: center;
+  margin-top: 5px;
+  position: relative;
+}
+
+.Help-elements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.Help-container h1 {
+  background-color: rgb(236, 236, 236);
+  padding: 30px;
+}
+
+.Help-elements > div {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  box-shadow: -30px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  background-color: rgb(206, 200, 200);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Svg-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+}
+.Svg-icon3 {
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+}
+
+.Help-elements-1:hover,
+.Help-elements-2:hover,
+.Help-elements-3:hover,
+.Help-elements-4:hover
+ {
+  transform: translate(
+    -5px,
+    -5px
+  ); /* Move the box 5 pixels up and left on hover */
+  transition: transform 0.4s ease; /* Add a smooth transition */
+}
+
+/* Hover out */
+.Help-elements-1:not(:hover) {
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.Help-elements-2:not(:hover) {
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.Help-elements-3:not(:hover) {
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+.Help-elements-4:not(:hover) {
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+/*CONTANT STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.Contant-container {
+  background-color: rgb(209, 208, 208);
+  margin-bottom: -80px;
+}
+.Contant-container h1 {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: 5px;
+  color: rgb(62, 62, 62);
+  font-size: 35px;
+  font-weight: bold;
+}
+.contant-1 {
+  margin: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 180px;
+  margin-top: 30px;
+}
+.Contant-container .contant-1 h3 {
+  margin-left: 110px;
+  color: rgb(20, 18, 18);
+  font-size: 20px;
+  font-weight: bold;
+}
+.Contant-container .contant-1 img {
+  width: 300px;
+  height: 300px;
+  margin-left: 24px;
+  padding: 20px;
+  border: 1px solid rgb(6, 20, 70);
+  border-radius: 30px;
+  box-shadow: -30px 10px 20px -10px rgba(8, 2, 35, 0.75);
+  background-color: white;
+}
+
+.contant-1 img:hover,
+.contant-2 img:hover {
+  transform: translate(
+    -5px,
+    -5px
+  ); /* Move the box 5 pixels up and left on hover */
+  transition: transform 0.4s ease; /* Add a smooth transition */
+}
+
+/* Hover out */
+.contant-1 img:not(:hover) {
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.contant-2 img:not(:hover) {
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.contant-2 {
+  margin: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 180px;
+  padding-bottom: 30px;
+}
+
+.Contant-container .contant-2 h3 {
+  margin-left: 110px;
+  color: rgb(20, 18, 18);
+  font-size: 20px;
+  font-weight: bold;
+}
+.Contant-container .contant-2 img {
+  width: 300px;
+  height: 300px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgb(6, 20, 70);
+  border-radius: 30px;
+  box-shadow: -30px 10px 20px -10px rgba(8, 2, 35, 0.75);
+  color: white;
+  background-color: rgb(255, 255, 255);
+}
+.contant-3 {
+  margin: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+.Contant-container .contant-3-h3 {
+  width: 300px;
+  height: 300px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgb(6, 20, 70);
+  border-radius: 30px;
+  box-shadow: -30px 10px 20px -10px rgba(8, 2, 35, 0.75);
+  color: white;
+  background-color: rgb(255, 255, 255);
+}
+.Contant-container .contant-3 img {
+  width: 300px;
+  height: 300px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgb(6, 20, 70);
+  border-radius: 30px;
+  box-shadow: -30px 10px 20px -10px rgba(8, 2, 35, 0.75);
+  color: white;
+  background-color: rgb(255, 255, 255);
+}
+.contant-1-img1-text .press {
+  font-size: 14px;
+  text-align: right;
+  float: right;
+  margin-bottom: 5px;
+  
+}
+
+
+/*clients style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.clients-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f4f4f4; /* Add background color if needed */
+  padding: 20px; /* Add padding for spacing */
+  margin-bottom: 200px;
+}
+
+.clients {
+  /* Set a maximum width for the content */
+  margin-left: 100px;
+}
+
+.text {
+  margin-bottom: 20px; /* Add margin to separate text from cards */
+  margin-right: 0px;
+}
+
+.clients-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* Card background color */
+  padding: 20px; /* Padding for the cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  width: 700px;
+  height: 150px;
+  margin-right: -500px;
+}
+
+.clients-card-text {
+  margin-bottom: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.clients-card-img {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.clients-card-img img {
+  width: 60px; /* Set the width of the client image */
+  height: 60px;
+  border-radius: 90px; /* Make the image round */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align the content to the right */
+  margin-right: -210px;
+}
+
+.clients-card-img-text {
+  text-align: left; /* Align text to the left */
+}
+.client-icon {
+  margin-left: 670px;
+  margin-bottom: -5px;
+}
+.clients-card-img-text h4 {
+  text-align: right;
+}
+.text h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.text h2 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+/* success style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.success-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -120px;
+  margin-bottom: -200px;
+}
+
+.background-image {
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.9;
+  width: 100%;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+
+.success-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+
+.success-box-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px; /* Adjust the spacing between rows */
+}
+
+.success-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.success-box-1,
+.success-box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 5px;
+  border: 1px solid wheat;
+  padding: 40px;
+  background-color: rgb(49, 49, 54);
+}
+
+.success-box-1 h1,
+.success-box-2 h1 {
+  font-size: 36px;
+  margin: 0;
+  color: white;
+}
+
+.success-box-1 h3,
+.success-box-2 h3 {
+  font-size: 18px;
+  margin: 0;
+  color: white;
+}
+
+/*CONTACT STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Adjust width based on your design */
+  box-sizing: border-box;
+  width: 1800px;
+}
+
+.contact-box > div {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-box-open-days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-box-open-days h3,
+h5,
+h4 {
+  text-align: center;
+}
+
+.contact-box h3 {
+  color: #3a3535;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Heading-mail,
+.Heading-phone,
+.Heading-location {
+  display: flex;
+  flex-direction: row-reverse; /* Change to row-reverse */
+  align-items: center; /* Center items vertically */
+}
+
+.Heading-mail svg,
+.Heading-phone svg,
+.Heading-opening-days svg {
+  margin-left: 10px; /* Add margin-left for spacing between icon and text */
+}
+
+.email-link,
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(65, 65, 201);
+
+}
+.Heading-phone a {
+  color: rgb(39, 39, 202);
+}
+.Heading-phone h5 {
+  font-size: 15px;
+  margin-left: 8px;
+  font-weight: bolder;
+}
+.contact-image h1,
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.contact-image h3 {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(59, 57, 57);
+  padding-top: 20px;
+}
+.contact-image a {
+  margin-right: 620px;
+  text-decoration: underline;
+  color: rgb(65, 65, 184);
+}
+.contact-image img {
+  width: 1499px;
+  height: 700px;
+}
+
+/*INFO STYLEEEEEEEEEEEEEEEEEEEEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+.info-container img {
+  width: 500px;
+  height: 400px;
+  margin-left: 100px;
+  padding-right: -500px;
+  border: 1px solid darkgray;
+  border-radius: 50px;
+}
+.info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info-text p {
+  width: 70%;
+  text-align: right;
+}
+.info-text h1 {
+  color: rgb(62, 56, 56);
+  text-align: right;
+  margin-left: 240px;
+  margin-bottom: 30px;
+}
+
+/*TEAM STYLEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.team-container {
+  margin-bottom: 0px;
+}
+.team-container h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(236, 236, 236);
+  color: #2a2929;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.team-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color:  rgb(238, 238, 234);
+}
+.team-box-1,
+.team-box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.team-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  background-color:  rgb(238, 238, 234);
+}
+.team-box-2-1 h4 {
+  font-size: 15px;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  background-color: #333;
+  color:  rgb(232, 232, 209);
+  padding: 15px;
+  width: 370px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+.team-box-2-1 img {
+  width: 320px;
+  height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  margin-left: 55px;
+}
+.team-box-1 h4,
+.team-box-2 h4 {
+  font-size: 15px;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  background-color: #333;
+  color: rgb(232, 232, 209);
+  padding: 15px;
+  width: 370px;
+  margin-bottom: 20px;
+}
+.team-box-1 img,
+.team-box-2 img {
+  width: 320px;
+  height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+
+
+/*CARDS STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.all-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: #eeeeee;
+}
+.all-cards .btn {
+  margin-bottom: 3200px;
+  margin-right: 20px;
+  border: 1px solid darkgrey;
+  border-radius: 15px;
+}
+.all-cards-subject {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #2a2929;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 2850px;
+  background-color: rgb(215, 215, 215);
+}
+.all-cards-subject h4 {
+  text-align: right;
+  font-size: 20px;
+  padding: 7px;
+}
+
+
+
+.cards-container img {
+  width: 250px;
+  height: 200px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+.cards-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2a2929;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+.card-1,
+.card-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border: 1px solid darkgrey;
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.card-1-text,
+.card-2-text {
+  text-align: right;
+}
+
+.card-1-text h2,
+.card-2-text h2 {
+  font-size: 25px;
+  color: #413d3d;
+  text-align: right;
+}
+.card-1-text p,
+.card-2-text p {
+  width: 420px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.cards a {
+  margin-right: 355px;
+  border: 2px solid rgb(108, 108, 33);
+  color: white;
+  background-color: #373a40;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.all-cards-subject a {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 9px;
+  border: 1px solid   rgb(219, 219, 209);
+  border-radius: 25px;
+  color: #4e4d4d;
+  margin-bottom: 4px;
+}
+a{position: relative;}
+.all-cards-subject a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust this value to control the distance of the line */
+  width: 100%;
+  height: 1px;
+  background-color: #605e5e; /* Adjust color as needed */
+}
+
+/*TAX STYLEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.tax-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tax-container-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid lightgray;
+  margin-top: 30px;
+  background-color: #dedede;
+  border-radius: 30px;
+}
+.tax-container-text h1 {
+  text-align: right;
+  padding: 10px;
+}
+.tax-container-text p {
+  text-align: right;
+  width: 600px;
+  padding: 10px;
+}
+.tax-container-text img {
+  width: 450px;
+  height: 400px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  margin-right: 15px;
+  padding: 0px;
+}
+.tax-subject {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #2a2929;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(219, 219, 209);
+  margin-right: 50px;
+}
+
+.tax-subject h4 {
+  font-size: 19px;
+}
+.tax-subject a {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 9px;
+  border: 1px solid   rgb(219, 219, 209);
+  border-radius: 25px;
+  color: #4e4d4d;
+  margin-bottom: 4px;
+}
+a{position: relative;}
+
+.tax-subject a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust this value to control the distance of the line */
+  width: 100%;
+  height: 1px;
+  background-color: #605e5e; /* Adjust color as needed */
+}
+
+
+
+/*FOOTER STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.footer-container {
+  background-color: #232323;
+}
+.footer-container2 {
+  background-color: #232323;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  fill: white;
+  padding: 3px;
+}
+.footer-rights h5 {
+  color: #bab6b6;
+  font-size: 14px;
+}
+.footer-icons a svg {
+  fill: #e5e5e5; /* Set the color to white */
+}
+
+/* Optionally, you can add hover effects */
+.footer-icons a:hover svg {
+  fill: #cccccc; /* Set the hover color */
+}
+
+/*
+let Componet;
+  switch (window.location.pathname) {
+    case "/":
+      Componet = <App />;
+      break;
+    case "/contact":
+      Componet = <Contant />;
+      break;
+    case "/about":
+      Componet = <About />;
+      break;
+    default:
+      break;
+  }
+  */
+
+/**************************************************************************************************************************/
+.nav-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+  font-size: 20px;
+  padding: 10px;
+}
+.nav-style-1 {
+  padding-right: 40px;
+}
+/* Navbar.css */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
+}
+
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1; /* Set initial opacity to 1 */
+  animation: fadeIn 0.5s forwards; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*סטייל עבוד מסכים גדולים*/
+
+@media (min-width: 1872px) {
+  /*מייצר פה מרווח שמותאם למסך טלוויזה*/
+  .Heading-container .Heading-alements {
+    gap: 250px;
+  }
+
+  .text-container {
+    position: absolute;
+    top: 24%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(230, 234, 255);
+    z-index: 1;
+  }
+
+  .contant-1 {
+    gap: 300px;
+  }
+  .contant-2 {
+    gap: 300px;
+  }
+  .contant-3 {
+    gap: 300px;
+  }
+  .Contant-container h1 {
+    margin-left: 0px;
+  }
+  .info-text h1 {
+    color: rgb(62, 56, 56);
+    text-align: right;
+    margin-left: 500px;
+    margin-bottom: 20px;
+  }
+  .contact-image a {
+    margin-right: 810px;
+    text-decoration: underline;
+    color: rgb(65, 65, 184);
+  }
+  nav-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .nav-style-1 {
+    padding-right: 40px;
+  }
+  .Contant-container h1 {
+    margin-right: 128px;
+  }
+  .contact-image iframe {
+    width: 1883px;
+  }
+}
+
+/*IPAD*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Heading-container .Heading-alements {
+    gap: 100px;
+    font-size: 10px;
+  }
+  .Heading-opening-days .s {
+    margin-top: 5px;
+  }
+  .swiper-slide {
+    margin-right: 15px; /* Further adjust the spacing for screens between 768px and 1023px */
+  }
+
+  .text-container {
+    position: absolute;
+    top: 25%;
+    left: 49%;
+  }
+
+  .text-container h1 {
+    font-size: 80px;
+    font-family: "Libre Baskerville", serif;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+  }
+  .text-container h3 {
+    font-size: 50px;
+    font-family: "Libre Baskerville", serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+/*iphone*/
+@media only screen and (min-device-width: 350px) and (max-device-width: 900px) {
+  /*מייצר פה מרווח בהאדינג שמותאם לטלפון*/
+  .Heading-container .Heading-alements {
+    gap: 100px;
+    font-size: 10px;
+  }
+  .Heading-opening-days .s {
+    margin-top: 5px;
+  }
+  .swiper-slide {
+    margin-right: 15px; /* Further adjust the spacing for screens between 768px and 1023px */
+  }
+  .text-container {
+    position: absolute;
+    top: 23%;
+    left: 49%;
+  }
+  .text-container h1 {
+    font-size: 60px;
+  }
+  .text-container h3 {
+    font-size: 40px;
+  }
+  .text-container h4 {
+    font-size: 50px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImg {
+    width: 50%; /* Make the image take full width */
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+
+  .information {
+    width: 100%; /* Make the information div take full width */
+    margin-bottom: 15px;
+  }
+
+  .info2 {
+    text-align: right;
+    padding: 0 10px; /* Add padding for better readability */
+  }
+  .Help-elements > div {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    box-shadow: -30px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    background-color: rgb(206, 200, 200);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .contant-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -15px;
+    padding-bottom: 105px;
+
+    
+  }
+  .contant-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    padding-bottom: 150px;
+  }
+  .contant-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .contant-3 .contant-3-img1 {
+    padding-bottom: 0px;
+  }
+  .contant-3 .contant-3-img2 {
+    margin-top: -30px;
+  }
+  .contant-3 .contant-3-img3 {
+    padding-bottom: 45px;
+  }
+  .Contant-container h1 {
+    margin-left: 140px;
+  }
+  .contant-2 .contant-2-img1 {
+    padding-bottom: 0px;
+  }
+  .contant-2 .contant-2-img2 {
+    margin-top: -30px;
+  }
+  .contant-2 .contant-2-img3 {
+    padding-bottom: 45px;
+  }
+
+  .Contant-container-fix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+  }
+
+  .contact-box-adress h5 {
+    font-size: 15px;
+  }
+  .contact-image img {
+    width: 960px;
+    height: 400px;
+  }
+
+  .contact-image a {
+    margin-right: 350px;
+    text-decoration: underline;
+    color: rgb(65, 65, 184);
+  }
+  .contact-image iframe {
+    width: 960px;
+    height: 400px;
+  }
+  .contact-container {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+  .Help-elements > div {
+    width: 210px;
+  }
+  .Help-elements-4 {
+    height: 360px;
+  }
+  .Help-elements-4 h2 {
+    margin-bottom: -px;
+  }
+  .info-container {
+    flex-direction: column-reverse; /* Change flex direction to column-reverse */
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  .info-img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-text {
+    width: 100%;
+  }
+  .all-cards {
+    gap: 50px;
+  }
+  .all-cards-subject {
+    margin-top: 150px;
+  margin-left: 30px;
+  }
+  .cards {
+   margin-right: 35px;
+  }
+  .cards a {
+    margin-right: 300px;
+    border: 2px solid rgb(108, 108, 33);
+    color: white;
+    background-color: #373a40;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+  }
+  
+  .footer-container2 {
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+}
