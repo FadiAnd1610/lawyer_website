@@ -1,8 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./About";
-import Contant from "./contant";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Contant from "./Contant";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+
 import NavScrollExample from "./NavBar";
 import Home from "./Home";
 import Contact from "./Contact";
