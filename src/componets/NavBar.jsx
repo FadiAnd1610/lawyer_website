@@ -21,7 +21,7 @@ function NavScrollExample() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  },);
 
   return (
     <Navbar expand="lg" className={`bg-body-tertiary ${isScrolled ? "sticky-top" : ""}`}>
