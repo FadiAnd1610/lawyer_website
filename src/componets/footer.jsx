@@ -5,7 +5,8 @@ function Footer() {
     <div className="footer-container">
       <div className="footer-text">
         <div className="footer-icons">
-          <a href="javascript:void(0)">
+          <a
+              href="https://www.ynet.co.il/news/article/bjymnwok5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="22"
@@ -16,7 +17,7 @@ function Footer() {
             </svg>
           </a>
 
-          <a href="javascript:void(0)">
+          <a  href="https://www.ynet.co.il/news/article/bjymnwok5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="22"
@@ -27,7 +28,7 @@ function Footer() {
             </svg>
           </a>
 
-          <a href="javascript:void(0)">
+          <a href="https://www.ynet.co.il/news/article/bjymnwok5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="22"
