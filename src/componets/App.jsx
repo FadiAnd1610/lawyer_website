@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import About from "./About";
-import Contant from "./Contant";
+import Contant from "./contant";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavScrollExample from "./NavBar";
