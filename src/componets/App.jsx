@@ -1,13 +1,15 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import About from "./About";
 import Contant from "./Contant";
-import { HashRouter as Router, Route, Switch, useLocation } from "react-router-dom";
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavScrollExample from "./NavBar";
 import Home from "./Home";
 import Contact from "./Contact";
 import Card from "./Card";
+
 import Tax from "../componets/Big-Subjects/tax";
 import CriminalRepresentation from "./Big-Subjects/CriminalRepresentation";
 import Minors from "./Big-Subjects/Minors";
@@ -20,76 +22,38 @@ import Sex from "./Big-Subjects/sex";
 import Violnce from "./Big-Subjects/violnce";
 import Partners from "./Big-Subjects/purtners";
 import Gun from "./Big-Subjects/gun";
-
 function App() {
-  const location = useLocation();
-
-  let Component;
-
-  switch (location.pathname) {
+  let Componet;
+  switch (window.location.pathname) {
+    
     case "/contant":
-      Component = <Contant />;
+      Componet = <Contant />;
       break;
     case "/contact":
-      Component = <Contact />;
+      Componet = <Contact />;
       break;
     case "/home":
-      Component = <Home />;
+      Componet = <Home />;
       break;
     case "/about":
-      Component = <About />;
+      Componet = <About />;
       break;
     case "/adjust":
-      Component = <Card />;
+      Componet = <Card />;
       break;
-    case "/Team":
-      Component = <Tax />;
-      break;
-    case "/now":
-      Component = <CriminalRepresentation />;
-      break;
-    case "/child":
-      Component = <Minors />;
-      break;
-    case "/robery":
-      Component = <Robery />;
-      break;
-    case "/pardons":
-      Component = <Forgive />;
-      break;
-    case "/murder":
-      Component = <Murder />;
-      break;
-    case "/dead":
-      Component = <Dead />;
-      break;
-    case "/car":
-      Component = <Car />;
-      break;
-    case "/sex":
-      Component = <Sex />;
-      break;
-    case "/violnce":
-      Component = <Violnce />;
-      break;
-    case "/partners":
-      Component = <Partners />;
-      break;
-    case "/gun":
-      Component = <Gun />;
-      break;
+
     default:
-      Component = <Home />;
       break;
   }
 
   return (
     <div className="App">
       <NavScrollExample />
-      {Component}
+      {Componet}
 
       <Router>
         <Switch>
+          <Route path="/" exact component={Card} />
           <Route path="/Team" component={Tax} />
           <Route path="/now" component={CriminalRepresentation} />
           <Route path="/child" component={Minors} />
