@@ -10,7 +10,7 @@ function About() {
         <img
           className="aboutImg scale-on-hover1"
           src={aboutImg}
-          alt="yosi image"
+          alt="yosiage"
         />
         <div className="information">
           <h1 className="h1style">עו"ד יוסי זילברברג </h1>
@@ -53,7 +53,7 @@ function About() {
         <img
           className="aboutImg scale-on-hover1"
           src={aboutImg}
-          alt="yosi image"
+          alt="yosii"
         />
         <div className="information">
           <h1 className="h1style">עו"ד יוסי זילברברג </h1>
@@ -96,7 +96,7 @@ function About() {
         <img
           className="aboutImg scale-on-hover1"
           src={aboutImg}
-          alt="yosi image"
+          alt="yosiimsdfag"
         />
         <div className="information">
           <h1 className="h1style">עו"ד יוסי זילברברג </h1>

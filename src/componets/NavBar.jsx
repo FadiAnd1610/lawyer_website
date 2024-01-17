@@ -1,9 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../img/logoo.png";
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 
 
 function NavScrollExample() {
@@ -19,9 +17,9 @@ function NavScrollExample() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll ,"handleScroll");
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll,"handleScroll");
     };
   }, [prevScrollPos]);
 

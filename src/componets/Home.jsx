@@ -3,7 +3,6 @@ import Details from "./Deatails";
 import Informatiom from "./Information";
 import Help from "./Help";
 import Team from "./Team";
-import Work from "./Work";
 import Footer from "./footer";
 
 function Home() {

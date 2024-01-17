@@ -1,8 +1,4 @@
 import React from "react";
-import { useState } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Heading from "./Heading";
-import img from "../img/yosi-pic.jpg";
 import tax from "../img/tax-img.jpg";
 import child from "../img/child-img.jpg";
 import free from "../img/free-prisoners.jpg";

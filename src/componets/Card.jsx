@@ -1,10 +1,8 @@
 import React from "react";
-import img from "../img/yosi-pic.jpg";
 import tax from "../img/tax-img.jpg";
 import child from "../img/child-img.jpg";
 import free from "../img/free-prisoners.jpg";
 import forgive from "../img/forgive.jpg";
-import robery from "../img/robery.jpg";
 import dead from "../img/dead.jpg";
 import cars from "../img/cars.jpg";
 import partnersFight from "../img/partners-fight.jpg";
@@ -14,9 +12,6 @@ import rob from "../img/rob.jpg";
 import sex from "../img/sex.jpg";
 import Footer from "./footer";
 import gunn from "../img/gunnnn.jpg";
-
-import { Link } from "react-router-dom";
-import Work from "./Work"; // Import the Work component
 
 function Card() {
   return (
@@ -468,7 +463,6 @@ function Card() {
 
           <div
             style={{
-              marginBottom: "0px",
               paddingBottom: "40px",
               marginBottom: "50px",
             }}

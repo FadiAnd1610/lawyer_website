@@ -51,7 +51,6 @@ function Details() {
               <div className="text-container">
                 <h1 className="title">משרד עורכי דין זילברברג</h1>
                 <h3 className="slogan">  מעורכי הדין הבולטים והמשפיעים בישראל במשפט הפלילי</h3>
-                <h4 className="sub-slogan"></h4>
               </div>
             </div>
           </div>
@@ -67,7 +66,6 @@ function Details() {
               <div className="text-container">
                 <h1 className="title">עו"ד יוסי זילברברג</h1>
                 <h3 className="slogan">אחד מעורכי דין הבולטים והמשפיעים בישראל במשפט הפלילי</h3>
-                <h4 className="sub-slogan"></h4> 
               </div>
             </div>
           </div>

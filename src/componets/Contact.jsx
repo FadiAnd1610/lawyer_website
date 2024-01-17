@@ -1,5 +1,4 @@
 import React from "react";
-import mapphoto from "../img/map-photo.png";
 import Footer from "./footer";
 
 function Contact() {
@@ -122,7 +121,7 @@ function Contact() {
                 <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
               </svg>
               <a
-                href=""
+                href="#"
                 onClick={callNow}
                 style={{ backgroundColor: "none" }}
                 onMouseOver={(e) => {
@@ -152,7 +151,7 @@ function Contact() {
                 <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
               </svg>
               <a
-                href=""
+                href="#"
                 onClick={callNow}
                 style={{ backgroundColor: "none" }}
                 onMouseOver={(e) => {
@@ -183,7 +182,7 @@ function Contact() {
                 <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
               </svg>
               <a
-                href=""
+                href="#"
                 onClick={callNow}
                 style={{ backgroundColor: "none" }}
                 onMouseOver={(e) => {
@@ -212,7 +211,7 @@ function Contact() {
 
         <div className="contact-image">
           <h1>איפה אנחנו ממוקמים</h1>
-          <iframe
+          <iframe className="iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3376.8934931854897!2d34.81949712456602!3d32.18014667391877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d462aa2b4f5c3%3A0x8410869484913f6e!2z15TXntei16TXmdec15nXnSA1LCDXm9ek16gg16nXnteo15nXlNeV!5e0!3m2!1siw!2sil!4v1705511732885!5m2!1siw!2sil"
             width="1500"
             height="600"
@@ -227,6 +226,7 @@ function Contact() {
             <a
               href="https://www.waze.com/ul?ll=32.178485,34.899252&navigate=yes"
               target="_blank"
+              rel="noreferrer"
               onMouseOver={(e) => {
                 e.target.style.color = "darkgray";
               }}

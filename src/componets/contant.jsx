@@ -19,7 +19,8 @@ function Contant() {
             <div className="contant-1-img1-text" style={{paddingBottom:"5px"}}>
               <a
                 href="https://www.ynet.co.il/articles/0,7340,L-4341057,00.html"
-                target="_blank"
+                  target="_blank"
+                  rel="noreferrer"
                 className="press"
               >
                  זוג עורכי הדין,החשד לגניבה והרב הבכיר 
@@ -27,7 +28,8 @@ function Contant() {
             </div>
             <a
               href="https://www.ynet.co.il/articles/0,7340,L-4341057,00.html"
-              target="_blank"
+                target="_blank"
+                rel="noreferrer"
             >
               <img src={art1} alt="article number 1" />
             </a>
@@ -38,7 +40,8 @@ function Contant() {
             <div className="contant-1-img1-text" style={{ paddingBottom: "5px" }} >
               <a
                 href="https://www.ynet.co.il/articles/0,7340,L-4053728,00.html"
-                target="_blank"
+                  target="_blank"
+                  rel="noreferrer"
                 className="press"
               >
                   עסק משפחתי: אחים נתפסו 'על חם' פורצים לבית 
@@ -46,7 +49,8 @@ function Contant() {
             </div>
             <a
               href="https://www.ynet.co.il/articles/0,7340,L-4053728,00.html"
-              target="_blank"
+                target="_blank"
+                rel="noreferrer"
             >
               <img src={art2} alt="article number 1" />
             </a>
@@ -57,7 +61,8 @@ function Contant() {
             <div className="contant-1-img1-text" style={{ paddingBottom: "5px" }}>
               <a
                 href="https://13tv.co.il/item/news/domestic/crime-and-justice/ramat-hasharon-903660219/"
-                target="_blank"
+                  target="_blank"
+                  rel="noreferrer"
                 className="press"
               >
                   חשד: עובדי עירייה הקימו אתר פסולת פיראטית - וגרפו הון לכיסם 
@@ -65,7 +70,8 @@ function Contant() {
             </div>
             <a
               href="https://13tv.co.il/item/news/domestic/crime-and-justice/ramat-hasharon-903660219/"
-              target="_blank"
+                target="_blank"
+                rel="noreferrer"
             >
               <img src={art3} alt="article number 1" />
             </a>
@@ -80,7 +86,8 @@ function Contant() {
             <div className="contant-1-img1-text" style={{ paddingBottom: "5px" }}>
               <a
                 href="https://www.ynet.co.il/news/article/B1gprmNWw"
-                target="_blank"
+                  target="_blank"
+                  rel="noreferrer"
                 className="press"
               >
                   איש העסקים מת"א שחשוד בהזנחת התינוק: "הוא החיים שלי. לא יודע איך הגיעו אליו סמים" 
@@ -88,7 +95,8 @@ function Contant() {
             </div>{" "}
             <a
               href="https://www.ynet.co.il/news/article/B1gprmNWw"
-              target="_blank"
+                target="_blank"
+                rel="noreferrer"
             >
               <img src={art4} alt="article number 1" />
             </a>
@@ -99,13 +107,14 @@ function Contant() {
             <div className="contant-1-img1-text" style={{ paddingBottom: "5px" }}>
               <a
                 href="https://www.bhol.co.il/news/745065"
-                target="_blank"
+                  target="_blank"
+                  rel="noreferrer"
                 className="press"
               >
                   מעצר עורכי הדין החרדים הוארך: "גניבה בהיקף גדול" 
               </a>
             </div>{" "}
-            <a href="https://www.bhol.co.il/news/745065" target="_blank">
+            <a href="https://www.bhol.co.il/news/745065" target="_blank" rel="noreferrer">
               <img src={art5} alt="article number 1" />
             </a>
           </div>
@@ -115,7 +124,8 @@ function Contant() {
             <div className="contant-1-img1-text" style={{ paddingBottom: "5px" }}>
               <a
                 href="https://www.ynet.co.il/news/article/bjymnwok5"
-                target="_blank"
+                  target="_blank"
+                  rel="noreferrer"
                 className="press"
               >
                   החשוד המרכזי בדריסת המתנדב יישאר במעצר, היתר שוחררו: "צעקנו שיבלום"
@@ -123,7 +133,8 @@ function Contant() {
             </div>{" "}
             <a
               href="https://www.ynet.co.il/news/article/bjymnwok5"
-              target="_blank"
+                target="_blank"
+                rel="noreferrer"
             >
               <img src={art6} alt="article number 1" />
             </a>
