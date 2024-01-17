@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./About";
 import Contant from "./Contant";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, useLocation } from "react-router-dom";
 
 import NavScrollExample from "./NavBar";
 import Home from "./Home";
@@ -20,10 +20,13 @@ import Sex from "./Big-Subjects/sex";
 import Violnce from "./Big-Subjects/violnce";
 import Partners from "./Big-Subjects/purtners";
 import Gun from "./Big-Subjects/gun";
+
 function App() {
+  const location = useLocation();
+
   let Component;
 
-  switch (window.location.pathname) {
+  switch (location.pathname) {
     case "/contant":
       Component = <Contant />;
       break;
@@ -87,7 +90,6 @@ function App() {
 
       <Router>
         <Switch>
-          <Route path="/" exact component={Card} />
           <Route path="/Team" component={Tax} />
           <Route path="/now" component={CriminalRepresentation} />
           <Route path="/child" component={Minors} />
