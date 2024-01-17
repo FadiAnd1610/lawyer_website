@@ -17,9 +17,9 @@ function NavScrollExample() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll ,"handleScroll");
+    window.addEventListener("scroll", handleScroll );
     return () => {
-      window.removeEventListener("scroll", handleScroll,"handleScroll");
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
@@ -61,7 +61,7 @@ function NavScrollExample() {
                     e.target.style.backgroundColor = "";
                     e.target.style.color = "";
                   }}
-                  h
+                  
                   href="/contant"
                 >
                   כתבות
@@ -78,7 +78,7 @@ function NavScrollExample() {
                     e.target.style.backgroundColor = "";
                     e.target.style.color = "";
                   }}
-                  h
+                  
                   href="/about"
                 >
                   צוות המשרד
@@ -95,7 +95,7 @@ function NavScrollExample() {
                     e.target.style.backgroundColor = "";
                     e.target.style.color = "";
                   }}
-                  h
+                  
                   href="/adjust"
                 >
                   תחומי התמחות
@@ -112,7 +112,7 @@ function NavScrollExample() {
                     e.target.style.backgroundColor = "";
                     e.target.style.color = "";
                   }}
-                  h
+                  
                   href="/home"
                 >
                   דף בית
