@@ -81,7 +81,7 @@ function NavScrollExample() {
                   
                   href="/about"
                 >
-                  צוות המשרד
+                  צוות עורכי הדין
                 </Nav.Link>
               </div>
               <div className="nav-style-1">

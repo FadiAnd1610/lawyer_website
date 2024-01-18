@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import court from "../img/court.jpg";
+import court from "../img/yosi2.jpg";
 import court2 from "../img/court2.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -59,14 +59,11 @@ function Details() {
           <div className="swiper-slide box">
             <div className="Details-elements">
               <img
-                src={court}
+                src={court2}
                 alt="img of a court"
-                className="background-image"
+                className="background-imagee"
               />
-              <div className="text-container">
-                <h1 className="title">עו"ד יוסי זילברברג</h1>
-                <h3 className="slogan">אחד מעורכי דין הבולטים והמשפיעים בישראל במשפט הפלילי</h3>
-              </div>
+            
             </div>
           </div>
         </SwiperSlide>

@@ -5,7 +5,7 @@ import Footer from "./footer";
 function About() {
   return (
     <div className="about">
-      <h1 className="about-h1">צוות המשרד</h1>
+      <h1 className="about-h1">צוות עורכי הדין</h1>
       <div className="container">
         <img
           className="aboutImg scale-on-hover1"

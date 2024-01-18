@@ -5,79 +5,49 @@
 }
 /*
 
-/*HEADING STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-/*עושה מרווח בכל הצדדים (מותח את הצבע ברקע)
-.Heading-alements {
-  padding: 20px 20px;
-}
-/*  יוצר פה רווחים וגורם לכל האלמנטים להיות בדיוק באמצע ובשורה אחת ובנוסף החלפתי פה את את הצבע ברקע וגם של הטקסט*/
-.Heading-container .Heading-alements {
+/*NavBar style!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.nav-style {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(197, 192, 192, 0.889);
-  color: rgb(65, 61, 61);
-  gap: 150px;
+  margin-left: 350px;
+  font-size: 20px;
+  padding: 10px;
 }
-/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
-.Heading-container .Heading-alements .Heading-location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-family: "Libre Baskerville", serif;
-  font-family: "Open Sans", sans-serif;
+.nav-style-1 {
+  padding-right: 40px;
 }
-/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
-
-.Heading-container .Heading-alements .Heading-phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-family: "Libre Baskerville", serif;
-  font-family: "Open Sans", sans-serif;
-}
-/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
-
-.Heading-container .Heading-alements .Heading-mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-family: "Libre Baskerville", serif;
+/* Navbar.css */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
 }
 
-.Heading-container .Heading-alements .Heading-mail .email-link {
-  color: rgb(54, 51, 51);
-  text-decoration: none;
-  font-family: "Libre Baskerville", serif;
-}
-.Heading-phone a {
-  color: rgb(54, 51, 51);
-  text-decoration: none;
-  font-weight: inherit;
-  background-color: none;
-  font-family: "Libre Baskerville", serif;
-}
-.Heading-location a {
-  color: rgb(54, 51, 51);
-  text-decoration: none;
-  font-family: "Libre Baskerville", serif;
-  font-size: 19px;
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1; /* Set initial opacity to 1 */
+  animation: fadeIn 0.5s forwards; /* Add fade-in animation */
 }
 
-/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
-
-.Heading-container .Heading-alements .Heading-opening-days {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-family: "Libre Baskerville", serif;
-  font-family: "Open Sans", sans-serif;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+
+
+/*הדף בית!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /*DEATAILS STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .Details-container {
@@ -95,6 +65,7 @@
   opacity: 0.9;
   transition: opacity 0.5s ease;
 }
+
 
 .text-container {
   position: absolute;
@@ -158,70 +129,41 @@
   opacity: 1;
 }
 
-/*About componet style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.container {
+
+/*INFORMATION STYLEEEEEEEEEEEEEEEEEEEEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.info-container {
   display: flex;
-  width: 80%; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the container */
-  margin-top: 20px;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 50px;
 }
-
-.aboutImg {
-  width: 400px;
-  height: 350px;
-  object-fit: cover;
-  object-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 20px;
-  margin-top: 80px;
+.info-container img {
+  width: 500px;
+  height: 400px;
+  margin-left: 100px;
+  padding-right: -500px;
+  border: 1px solid darkgray;
   border-radius: 50px;
-  box-shadow: 0 4px 30px rgba(63, 61, 61, 0.1);
 }
-
-.information {
-  flex: 1;
-  padding: 20px;
+.info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.h1style {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.info-text p {
+  width: 70%;
   text-align: right;
 }
-
-.h3style {
-  font-size: 18px;
-  margin-top: 0;
+.info-text h1 {
+  color: rgb(62, 56, 56);
   text-align: right;
-  margin-bottom: 20px;
+  margin-left: 240px;
+  margin-bottom: 30px;
 }
 
-.info2 p {
-  text-align: right;
-  color: rgb(58, 57, 57);
-  font-size: 20px;
-}
-.about-h1 {
-  text-align: center;
-}
-
-/* Optional: Add some spacing between containers */
-.container + .container {
-  margin-top: 40px;
-}
-
-.scale-on-hover1 {
-  transition: transform 1.5s ease-in-out; /* Add a smooth transition effect on the transform property */
-}
-
-/* Apply the scale transformation on hover */
-.scale-on-hover1:hover {
-  transform: scale(1.1);
-}
 
 /*Help componet style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* Help.css */
@@ -296,6 +238,283 @@
 .Help-elements-4:not(:hover) {
   transition: transform 0.3s ease; /* Add a smooth transition */
 }
+
+
+/*TEAM STYLEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.team-container {
+  margin-bottom: 0px;
+}
+.team-container h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(236, 236, 236);
+  color: #2a2929;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.team-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: rgb(238, 238, 234);
+}
+.team-box-1,
+.team-box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.team-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  background-color: rgb(238, 238, 234);
+}
+.team-box-2-1 h4 {
+  font-size: 15px;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  background-color: #333;
+  color: rgb(232, 232, 209);
+  padding: 15px;
+  width: 370px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+.team-box-2-1 img {
+  width: 320px;
+  height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  margin-left: 55px;
+}
+.team-box-1 h4,
+.team-box-2 h4 {
+  font-size: 15px;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  background-color: #333;
+  color: rgb(232, 232, 209);
+  padding: 15px;
+  width: 370px;
+  margin-bottom: 20px;
+}
+.team-box-1 img,
+.team-box-2 img {
+  width: 320px;
+  height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+
+/*פה נגמר הדף בית!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/********************************************************************************************************************************/
+
+/*תחומי ההתמחות!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*CARDS STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.all-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: #eeeeee;
+}
+.all-cards .btn {
+  margin-bottom: 3200px;
+  margin-right: 20px;
+  border: 1px solid darkgrey;
+  border-radius: 15px;
+}
+.all-cards-subject {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #2a2929;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 2850px;
+  background-color: rgb(215, 215, 215);
+}
+.all-cards-subject h4 {
+  text-align: right;
+  font-size: 20px;
+  padding: 7px;
+}
+
+.cards-container img {
+  width: 250px;
+  height: 200px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+.cards-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2a2929;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+.card-1,
+.card-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border: 1px solid darkgrey;
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.card-1-text,
+.card-2-text {
+  text-align: right;
+}
+
+.card-1-text h2,
+.card-2-text h2 {
+  font-size: 25px;
+  color: #413d3d;
+  text-align: right;
+}
+.card-1-text p,
+.card-2-text p {
+  width: 420px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.cards a {
+  margin-right: 355px;
+  border: 2px solid rgb(108, 108, 33);
+  color: white;
+  background-color: #373a40;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.all-cards-subject a {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 9px;
+  border: 1px solid rgb(219, 219, 209);
+  border-radius: 25px;
+  color: #4e4d4d;
+  margin-bottom: 4px;
+}
+a {
+  position: relative;
+}
+.all-cards-subject a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust this value to control the distance of the line */
+  width: 100%;
+  height: 1px;
+  background-color: #605e5e; /* Adjust color as needed */
+}
+
+
+/*פה נגמר תלומי ההתמחות!!!!!!!!!!!!!!*/
+
+/********************************************************************************************************************************/
+
+
+/*!!!!!!!!!!!!!צוות עורכי הדין*/
+
+
+/*About componet style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.container {
+  display: flex;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.aboutImg {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  margin-top: 80px;
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(63, 61, 61, 0.1);
+}
+
+.information {
+  flex: 1;
+  padding: 20px;
+}
+
+.h1style {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.h3style {
+  font-size: 18px;
+  margin-top: 0;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.info2 p {
+  text-align: right;
+  color: rgb(58, 57, 57);
+  font-size: 20px;
+}
+.about-h1 {
+  text-align: center;
+}
+
+/* Optional: Add some spacing between containers */
+.container + .container {
+  margin-top: 40px;
+}
+
+.scale-on-hover1 {
+  transition: transform 1.5s ease-in-out; /* Add a smooth transition effect on the transform property */
+}
+
+/* Apply the scale transformation on hover */
+.scale-on-hover1:hover {
+  transform: scale(1.1);
+}
+
+
+/*פה נגמר צוות עורכי הדין!!!!!!!!!!!!!!!!!*/
+
+/********************************************************************************************************************************/
+
+
+/*פה מתחיל הכתבות!!!!!!!!!!!!!!!!!!!!*/
+
 
 /*CONTANT STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .Contant-container {
@@ -418,6 +637,278 @@
   float: right;
   margin-bottom: 5px;
 }
+
+/*פה מסיים עם הכתבות!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/********************************************************************************************************************************/
+
+
+/*מתחיל עם היצירת קשר!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*CONTACT STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Adjust width based on your design */
+  box-sizing: border-box;
+  width: 1800px;
+}
+
+.contact-box > div {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-box-open-days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-box-open-days h3,
+h5,
+h4 {
+  text-align: center;
+}
+
+.contact-box h3 {
+  color: #3a3535;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Heading-mail,
+.Heading-phone,
+.Heading-location {
+  display: flex;
+  flex-direction: row-reverse; /* Change to row-reverse */
+  align-items: center; /* Center items vertically */
+}
+.Heading-phone button {
+  color: rgb(39, 39, 202);
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.Heading-mail svg,
+.Heading-phone svg,
+.Heading-opening-days svg {
+  margin-left: 10px; /* Add margin-left for spacing between icon and text */
+}
+
+.email-link,
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(62, 62, 188);
+}
+.Heading-phone {
+  margin-bottom: 5px;
+}
+.Heading-phone h5 {
+  font-size: 15px;
+  margin-left: 8px;
+  font-weight: bolder;
+}
+.contact-image h1,
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.contact-image h3 {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(59, 57, 57);
+  padding-top: 20px;
+}
+.contact-image a {
+  margin-right: 620px;
+  text-decoration: underline;
+  color: rgb(65, 65, 184);
+}
+.contact-image img {
+  width: 1499px;
+  height: 700px;
+}
+
+/*מסיים עם היצירת קשר*/
+
+
+/*TAX STYLEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.tax-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tax-container-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid lightgray;
+  margin-top: 30px;
+  background-color: #dedede;
+  border-radius: 30px;
+}
+.tax-container-text h1 {
+  text-align: right;
+  padding: 10px;
+}
+.tax-container-text p {
+  text-align: right;
+  width: 600px;
+  padding: 10px;
+}
+.tax-container-text img {
+  width: 450px;
+  height: 400px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  margin-right: 15px;
+  padding: 0px;
+}
+.tax-subject {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #2a2929;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(219, 219, 209);
+  margin-right: 50px;
+}
+
+.tax-subject h4 {
+  font-size: 19px;
+}
+.tax-subject a {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 9px;
+  border: 1px solid rgb(219, 219, 209);
+  border-radius: 25px;
+  color: #4e4d4d;
+  margin-bottom: 4px;
+}
+a {
+  position: relative;
+}
+
+.tax-subject a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust this value to control the distance of the line */
+  width: 100%;
+  height: 1px;
+  background-color: #605e5e; /* Adjust color as needed */
+}
+
+
+/*
+/*HEADING STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*עושה מרווח בכל הצדדים (מותח את הצבע ברקע)
+.Heading-alements {
+  padding: 20px 20px;
+}
+/*  יוצר פה רווחים וגורם לכל האלמנטים להיות בדיוק באמצע ובשורה אחת ובנוסף החלפתי פה את את הצבע ברקע וגם של הטקסט*/
+.Heading-container .Heading-alements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(197, 192, 192, 0.889);
+  color: rgb(65, 61, 61);
+  gap: 150px;
+}
+/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
+.Heading-container .Heading-alements .Heading-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+}
+/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
+
+.Heading-container .Heading-alements .Heading-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+}
+/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
+
+.Heading-container .Heading-alements .Heading-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.Heading-container .Heading-alements .Heading-mail .email-link {
+  color: rgb(54, 51, 51);
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+.Heading-phone a {
+  color: rgb(54, 51, 51);
+  text-decoration: none;
+  font-weight: inherit;
+  background-color: none;
+  font-family: "Libre Baskerville", serif;
+}
+.Heading-location a {
+  color: rgb(54, 51, 51);
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  font-size: 19px;
+}
+
+/*גורם לטקסט ולאייקון להיות בשורה ומייצר מרווח בינהם*/
+
+.Heading-container .Heading-alements .Heading-opening-days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+
 
 /*clients style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .clients-container {
@@ -561,403 +1052,7 @@
   color: white;
 }
 
-/*CONTACT STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-}
 
-.contact-box {
-  display: flex;
-  flex-direction: row;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  width: calc(33.33% - 20px); /* Adjust width based on your design */
-  box-sizing: border-box;
-  width: 1800px;
-}
-
-.contact-box > div {
-  flex: 1;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.contact-box-open-days {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.contact-box-open-days h3,
-h5,
-h4 {
-  text-align: center;
-}
-
-.contact-box h3 {
-  color: #3a3535;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.Heading-mail,
-.Heading-phone,
-.Heading-location {
-  display: flex;
-  flex-direction: row-reverse; /* Change to row-reverse */
-  align-items: center; /* Center items vertically */
-}
-.Heading-phone button {
-  color: rgb(39, 39, 202);
-  border: none;
-  background-color: #f9f9f9;
-}
-
-.Heading-mail svg,
-.Heading-phone svg,
-.Heading-opening-days svg {
-  margin-left: 10px; /* Add margin-left for spacing between icon and text */
-}
-
-.email-link,
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: rgb(62, 62, 188);
-}
-.Heading-phone {
-  margin-bottom: 5px;
-}
-.Heading-phone h5 {
-  font-size: 15px;
-  margin-left: 8px;
-  font-weight: bolder;
-}
-.contact-image h1,
-h3 {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-.contact-image h3 {
-  text-align: center;
-  font-weight: bold;
-  color: rgb(59, 57, 57);
-  padding-top: 20px;
-}
-.contact-image a {
-  margin-right: 620px;
-  text-decoration: underline;
-  color: rgb(65, 65, 184);
-}
-.contact-image img {
-  width: 1499px;
-  height: 700px;
-}
-
-/*INFO STYLEEEEEEEEEEEEEEEEEEEEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.info-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 55px;
-  margin-bottom: 50px;
-}
-.info-container img {
-  width: 500px;
-  height: 400px;
-  margin-left: 100px;
-  padding-right: -500px;
-  border: 1px solid darkgray;
-  border-radius: 50px;
-}
-.info-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.info-text p {
-  width: 70%;
-  text-align: right;
-}
-.info-text h1 {
-  color: rgb(62, 56, 56);
-  text-align: right;
-  margin-left: 240px;
-  margin-bottom: 30px;
-}
-
-/*TEAM STYLEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.team-container {
-  margin-bottom: 0px;
-}
-.team-container h1 {
-  text-align: center;
-  padding: 20px;
-  background-color: rgb(236, 236, 236);
-  color: #2a2929;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.team-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  background-color: rgb(238, 238, 234);
-}
-.team-box-1,
-.team-box-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 25px;
-}
-.team-box2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 40px;
-  background-color: rgb(238, 238, 234);
-}
-.team-box-2-1 h4 {
-  font-size: 15px;
-  border: 1px solid darkgray;
-  border-radius: 20px;
-  background-color: #333;
-  color: rgb(232, 232, 209);
-  padding: 15px;
-  width: 370px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 28px;
-}
-.team-box-2-1 img {
-  width: 320px;
-  height: 300px;
-  border: 1px solid lightgray;
-  border-radius: 15px;
-  margin-left: 55px;
-}
-.team-box-1 h4,
-.team-box-2 h4 {
-  font-size: 15px;
-  border: 1px solid darkgray;
-  border-radius: 20px;
-  background-color: #333;
-  color: rgb(232, 232, 209);
-  padding: 15px;
-  width: 370px;
-  margin-bottom: 20px;
-}
-.team-box-1 img,
-.team-box-2 img {
-  width: 320px;
-  height: 300px;
-  border: 1px solid lightgray;
-  border-radius: 15px;
-}
-
-/*CARDS STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-.all-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  background-color: #eeeeee;
-}
-.all-cards .btn {
-  margin-bottom: 3200px;
-  margin-right: 20px;
-  border: 1px solid darkgrey;
-  border-radius: 15px;
-}
-.all-cards-subject {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #2a2929;
-  border-radius: 15px;
-  padding: 10px;
-  margin-bottom: 2850px;
-  background-color: rgb(215, 215, 215);
-}
-.all-cards-subject h4 {
-  text-align: right;
-  font-size: 20px;
-  padding: 7px;
-}
-
-.cards-container img {
-  width: 250px;
-  height: 200px;
-  border: 1px solid lightgrey;
-  border-radius: 25px;
-  margin-right: 15px;
-}
-.cards-container h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #2a2929;
-}
-.cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin-bottom: 100px;
-  flex-direction: column;
-}
-.card-1,
-.card-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lightgray;
-  border: 1px solid darkgrey;
-  border-radius: 25px;
-  padding: 20px;
-  margin-bottom: 5px;
-}
-.card-1-text,
-.card-2-text {
-  text-align: right;
-}
-
-.card-1-text h2,
-.card-2-text h2 {
-  font-size: 25px;
-  color: #413d3d;
-  text-align: right;
-}
-.card-1-text p,
-.card-2-text p {
-  width: 420px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.cards a {
-  margin-right: 355px;
-  border: 2px solid rgb(108, 108, 33);
-  color: white;
-  background-color: #373a40;
-  padding: 7px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: none;
-}
-
-.all-cards-subject a {
-  text-decoration: none;
-  font-size: 17px;
-  padding: 9px;
-  border: 1px solid rgb(219, 219, 209);
-  border-radius: 25px;
-  color: #4e4d4d;
-  margin-bottom: 4px;
-}
-a {
-  position: relative;
-}
-.all-cards-subject a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px; /* Adjust this value to control the distance of the line */
-  width: 100%;
-  height: 1px;
-  background-color: #605e5e; /* Adjust color as needed */
-}
-
-/*TAX STYLEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.tax-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.tax-container-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  border: 2px solid lightgray;
-  margin-top: 30px;
-  background-color: #dedede;
-  border-radius: 30px;
-}
-.tax-container-text h1 {
-  text-align: right;
-  padding: 10px;
-}
-.tax-container-text p {
-  text-align: right;
-  width: 600px;
-  padding: 10px;
-}
-.tax-container-text img {
-  width: 450px;
-  height: 400px;
-  border: 1px solid lightgrey;
-  border-radius: 25px;
-  margin-right: 15px;
-  padding: 0px;
-}
-.tax-subject {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #2a2929;
-  border-radius: 15px;
-  padding: 10px;
-  background-color: rgb(219, 219, 209);
-  margin-right: 50px;
-}
-
-.tax-subject h4 {
-  font-size: 19px;
-}
-.tax-subject a {
-  text-decoration: none;
-  font-size: 17px;
-  padding: 9px;
-  border: 1px solid rgb(219, 219, 209);
-  border-radius: 25px;
-  color: #4e4d4d;
-  margin-bottom: 4px;
-}
-a {
-  position: relative;
-}
-
-.tax-subject a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px; /* Adjust this value to control the distance of the line */
-  width: 100%;
-  height: 1px;
-  background-color: #605e5e; /* Adjust color as needed */
-}
 
 /*FOOTER STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .footer-container {
@@ -1011,42 +1106,7 @@ let Componet;
   */
 
 /**************************************************************************************************************************/
-.nav-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 350px;
-  font-size: 20px;
-  padding: 10px;
-}
-.nav-style-1 {
-  padding-right: 40px;
-}
-/* Navbar.css */
-.navbar {
-  background-color: #ffffff;
-  padding: 10px;
-  transition: background-color 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
-}
 
-.sticky-top {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  opacity: 1; /* Set initial opacity to 1 */
-  animation: fadeIn 0.5s forwards; /* Add fade-in animation */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 /*סטייל עבוד מסכים גדולים*/
 

@@ -4,7 +4,7 @@ import img from "../img/yosi-pic.jpg";
 function Team() {
   return (
       <div className="team-container">
-          <h1>צוות עובדים</h1>
+          <h1>צוות עורכי הדין</h1>
       <div className="team-box">
         <div className="team-box-1">
           <h4>מישהו משהו מנהל חברת הייטל כאשר יש שם משהו</h4>

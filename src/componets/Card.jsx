@@ -12,6 +12,7 @@ import rob from "../img/rob.jpg";
 import sex from "../img/sex.jpg";
 import Footer from "./footer";
 import gunn from "../img/gunnnn.jpg";
+import freeVictem from "../img/free victem.jpg";
 
 function Card() {
   return (
@@ -185,7 +186,21 @@ function Card() {
             }}
           >
             {" "}
-            נשיאת ננשק{" "}
+            נשיאת נשק{" "}
+          </a>
+          <a
+            href="crimeVictem"
+            onMouseOver={(e) => {
+              e.target.style.backgroundColor = "rgb(145, 145, 112)";
+              e.target.style.color = "#fff";
+            }}
+            onMouseOut={(e) => {
+              e.target.style.backgroundColor = "";
+              e.target.style.color = "";
+            }}
+          >
+            {" "}
+            נפגעי עבירה{" "}
           </a>
         </div>
         <div className="cards-container">
@@ -503,6 +518,32 @@ function Card() {
                 </p>
                 <a
                   href="gun"
+                  onMouseOver={(e) => {
+                    e.target.style.backgroundColor = "rgb(145, 145, 112)";
+                    e.target.style.color = "#fff";
+                  }}
+                  onMouseOut={(e) => {
+                    e.target.style.backgroundColor = "";
+                    e.target.style.color = "";
+                  }}
+                >
+                  {" "}
+                  --קרא עוד{" "}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="cards" style={{ marginBottom: "50px" }}>
+            <div className="card-1">
+              <img src={freeVictem} alt="מיסים" />
+              <div className="card-1-text">
+                <h2>נפגעי עבירה </h2>
+                <p>
+                  תחשבו שיש פה איזה טקסט נחמד ויש פה אחלה מידע שמעיד על רשמיות
+                  ותוכן איכותי. אני בעצם בטקסט הזה אני רושם המלצה מסויימת על בן
+                </p>
+                <a
+                  href="crimeVictem"
                   onMouseOver={(e) => {
                     e.target.style.backgroundColor = "rgb(145, 145, 112)";
                     e.target.style.color = "#fff";

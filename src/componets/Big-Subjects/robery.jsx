@@ -171,8 +171,22 @@ function Robery() {
                 }}
               >
                 {" "}
-               נשיאת ננשק {" "}
-              </a>
+               נשיאת נשק {" "}
+        </a>
+        <a
+          href="crimeVictem"
+          onMouseOver={(e) => {
+            e.target.style.backgroundColor = "rgb(145, 145, 112)";
+            e.target.style.color = "#fff";
+          }}
+          onMouseOut={(e) => {
+            e.target.style.backgroundColor = "";
+            e.target.style.color = "";
+          }}
+        >
+          {" "}
+          נפגעי עבירה{" "}
+        </a>
       </div>
       <div className="tax-container-text">
         <h1>שוד</h1>

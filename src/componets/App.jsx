@@ -1,15 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import About from "./About";
 import Contant from "./contant";
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavScrollExample from "./NavBar";
 import Home from "./Home";
 import Contact from "./Contact";
 import Card from "./Card";
-
+import CrimeVictem from "./Big-Subjects/crimeVictem";
 import Tax from "../componets/Big-Subjects/tax";
 import CriminalRepresentation from "./Big-Subjects/CriminalRepresentation";
 import Minors from "./Big-Subjects/Minors";
@@ -67,6 +65,8 @@ function App() {
           <Route path="/violnce" component={Violnce} />
           <Route path="/partners" component={Partners} />
           <Route path="/gun" component={Gun} />
+          <Route path="/crimeVictem" component={CrimeVictem} />
+
         </Switch>
       </Router>
     </div>
