@@ -1142,6 +1142,185 @@ let Componet;
   }
 }
 
+@media only screen
+  and (device-width: 1024px)
+  and (device-height: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Your styles for iPad Pro 12.9-inch (landscape) */
+    .all-cards {
+      gap: 50px;
+    }
+    .all-cards-subject {
+      margin-top: 150px;
+      margin-left: 30px;
+    }
+    .cards {
+      margin-right: 35px;
+    }
+    .cards a {
+      margin-right: 300px;
+      border: 2px solid rgb(108, 108, 33);
+      color: white;
+      background-color: #373a40;
+      padding: 7px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: none;
+    }
+    .text-container {
+      position: absolute;
+      top: 23%;
+      left: 49%;
+    }
+    .text-container h1 {
+      font-size: 60px;
+    }
+    .text-container h3 {
+      font-size: 40px;
+    }
+    .text-container h4 {
+      font-size: 50px;
+    }
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .aboutImg {
+      width: 50%; /* Make the image take full width */
+      margin-bottom: 20px; /* Add some space below the image */
+    }
+  
+    .information {
+      width: 100%; /* Make the information div take full width */
+      margin-bottom: 15px;
+    }
+  
+    .info2 {
+      text-align: right;
+      padding: 0 10px; /* Add padding for better readability */
+    }
+    .Help-elements > div {
+      width: 150px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 30px;
+      margin-bottom: 15px;
+      box-shadow: -30px 10px 20px -10px rgba(0, 0, 0, 0.75);
+      background-color: rgb(206, 200, 200);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+  
+    .contant-1 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: -15px;
+      padding-bottom: 105px;
+    }
+    .contant-2 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 50px;
+      padding-bottom: 150px;
+    }
+    .contant-3 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 50px;
+    }
+    .contant-3 .contant-3-img1 {
+      padding-bottom: 0px;
+    }
+    .contant-3 .contant-3-img2 {
+      margin-top: -30px;
+    }
+    .contant-3 .contant-3-img3 {
+      padding-bottom: 45px;
+    }
+    .Contant-container h1 {
+      margin-left: 140px;
+    }
+    .contant-2 .contant-2-img1 {
+      padding-bottom: 0px;
+    }
+    .contant-2 .contant-2-img2 {
+      margin-top: -30px;
+    }
+    .contant-2 .contant-2-img3 {
+      padding-bottom: 45px;
+    }
+  
+    .Contant-container-fix {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -30px;
+    }
+  
+    .contact-box-adress h5 {
+      font-size: 15px;
+    }
+    .contact-image img {
+      width: 960px;
+      height: 400px;
+    }
+  
+    .contact-image a {
+      margin-right: 380px;
+      text-decoration: underline;
+      color: rgb(65, 65, 184);
+    }
+    .contact-image iframe {
+      width: 1002px;
+      height: 400px;
+    }
+    .contact-container {
+      margin-bottom: 0;
+      max-width: 100%;
+    }
+    .Heading-phone h5 {
+      font-size: 10px;
+      margin-top: 3px;
+      padding-top: 5px;
+    }
+    .Heading-phone {
+      font-size: 8px;
+    }
+    .Heading-phone .icon-style {
+      margin-left: 2px;
+    }
+    .Help-elements > div {
+      width: 210px;
+    }
+    .Help-elements-4 {
+      height: 360px;
+    }
+    .Help-elements-4 h2 {
+      margin-bottom: -px;
+    }
+    .info-container {
+      flex-direction: column-reverse; /* Change flex direction to column-reverse */
+      margin: 20px;
+      font-size: 20px;
+    }
+  
+    .info-img {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .info-text {
+      width: 100%;
+    }
+  
+}
+
 /*iphone*/
 @media only screen and (min-device-width: 350px) and (max-device-width: 900px) {
   /*מייצר פה מרווח בהאדינג שמותאם לטלפון*/
