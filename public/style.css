@@ -276,8 +276,7 @@
 .Help-elements-1:hover,
 .Help-elements-2:hover,
 .Help-elements-3:hover,
-.Help-elements-4:hover
- {
+.Help-elements-4:hover {
   transform: translate(
     -5px,
     -5px
@@ -421,9 +420,7 @@
   text-align: right;
   float: right;
   margin-bottom: 5px;
-  
 }
-
 
 /*clients style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .clients-container {
@@ -626,6 +623,11 @@ h4 {
   flex-direction: row-reverse; /* Change to row-reverse */
   align-items: center; /* Center items vertically */
 }
+.Heading-phone button {
+  color: rgb(39, 39, 202);
+  border: none;
+  background-color: #f9f9f9;
+}
 
 .Heading-mail svg,
 .Heading-phone svg,
@@ -637,11 +639,10 @@ h4 {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: rgb(65, 65, 201);
-
+  color: rgb(62, 62, 188);
 }
-.Heading-phone a {
-  color: rgb(39, 39, 202);
+.Heading-phone {
+  margin-bottom: 5px;
 }
 .Heading-phone h5 {
   font-size: 15px;
@@ -721,7 +722,7 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  background-color:  rgb(238, 238, 234);
+  background-color: rgb(238, 238, 234);
 }
 .team-box-1,
 .team-box-2 {
@@ -737,14 +738,14 @@ h3 {
   justify-content: center;
   align-items: center;
   padding-bottom: 40px;
-  background-color:  rgb(238, 238, 234);
+  background-color: rgb(238, 238, 234);
 }
 .team-box-2-1 h4 {
   font-size: 15px;
   border: 1px solid darkgray;
   border-radius: 20px;
   background-color: #333;
-  color:  rgb(232, 232, 209);
+  color: rgb(232, 232, 209);
   padding: 15px;
   width: 370px;
   margin-bottom: 20px;
@@ -777,7 +778,6 @@ h3 {
   border-radius: 15px;
 }
 
-
 /*CARDS STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .all-cards {
@@ -808,8 +808,6 @@ h3 {
   font-size: 20px;
   padding: 7px;
 }
-
-
 
 .cards-container img {
   width: 250px;
@@ -875,12 +873,14 @@ h3 {
   text-decoration: none;
   font-size: 17px;
   padding: 9px;
-  border: 1px solid   rgb(219, 219, 209);
+  border: 1px solid rgb(219, 219, 209);
   border-radius: 25px;
   color: #4e4d4d;
   margin-bottom: 4px;
 }
-a{position: relative;}
+a {
+  position: relative;
+}
 .all-cards-subject a::after {
   content: "";
   position: absolute;
@@ -943,12 +943,14 @@ a{position: relative;}
   text-decoration: none;
   font-size: 17px;
   padding: 9px;
-  border: 1px solid   rgb(219, 219, 209);
+  border: 1px solid rgb(219, 219, 209);
   border-radius: 25px;
   color: #4e4d4d;
   margin-bottom: 4px;
 }
-a{position: relative;}
+a {
+  position: relative;
+}
 
 .tax-subject a::after {
   content: "";
@@ -959,8 +961,6 @@ a{position: relative;}
   height: 1px;
   background-color: #605e5e; /* Adjust color as needed */
 }
-
-
 
 /*FOOTER STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .footer-container {
@@ -1210,8 +1210,6 @@ let Componet;
     flex-direction: column;
     margin-top: -15px;
     padding-bottom: 105px;
-
-    
   }
   .contant-2 {
     display: flex;
@@ -1276,6 +1274,17 @@ let Componet;
     margin-bottom: 0;
     max-width: 100%;
   }
+  .Heading-phone h5 {
+    font-size: 10px;
+    margin-top: 3px;
+    padding-top: 5px;
+  }
+  .Heading-phone {
+    font-size: 8px;
+  }
+  .Heading-phone .icon-style {
+    margin-left: 2px;
+  }
   .Help-elements > div {
     width: 210px;
   }
@@ -1305,10 +1314,10 @@ let Componet;
   }
   .all-cards-subject {
     margin-top: 150px;
-  margin-left: 30px;
+    margin-left: 30px;
   }
   .cards {
-   margin-right: 35px;
+    margin-right: 35px;
   }
   .cards a {
     margin-right: 300px;
@@ -1321,7 +1330,7 @@ let Componet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
   }
-  
+
   .footer-container2 {
     margin-top: 80px;
     margin-bottom: 0px;
