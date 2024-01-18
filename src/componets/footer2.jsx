@@ -5,7 +5,11 @@ function Footer2() {
     <div className="footer-container2">
       <div className="footer-text">
         <div className="footer-icons">
-          <a  href="https://www.facebook.com/zlaws.co.il/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/zlaws.co.il/"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="22"
@@ -16,7 +20,11 @@ function Footer2() {
             </svg>
           </a>
 
-          <a  href="https://www.facebook.com/zlaws.co.il/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/zlaws.co.il/"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="22"
@@ -27,7 +35,11 @@ function Footer2() {
             </svg>
           </a>
 
-          <a  href="https://www.facebook.com/zlaws.co.il/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/zlaws.co.il/"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="22"

@@ -160,9 +160,6 @@
 
 /*About componet style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.about {
-}
-
 .container {
   display: flex;
   width: 80%; /* Adjust the width as needed */
@@ -218,7 +215,7 @@
 }
 
 .scale-on-hover1 {
-  transition: transform 1.8s ease-in-out; /* Add a smooth transition effect on the transform property */
+  transition: transform 1.5s ease-in-out; /* Add a smooth transition effect on the transform property */
 }
 
 /* Apply the scale transformation on hover */

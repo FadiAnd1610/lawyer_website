@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./About";
 import Contant from "./contant";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import NavScrollExample from "./NavBar";
 import Home from "./Home";
 import Contact from "./Contact";
@@ -23,6 +23,7 @@ import Violnce from "./Big-Subjects/violnce";
 import Partners from "./Big-Subjects/purtners";
 import Gun from "./Big-Subjects/gun";
 function App() {
+  
   let Componet;
   switch (window.location.pathname) {
     
@@ -53,7 +54,7 @@ function App() {
 
       <Router>
         <Switch>
-          <Route path="/" exact component={Card} />
+        <Redirect from="/" to="/home" />
           <Route path="/Team" component={Tax} />
           <Route path="/now" component={CriminalRepresentation} />
           <Route path="/child" component={Minors} />
