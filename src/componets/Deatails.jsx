@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import court from "../img/yosi2.jpg";
 import court2 from "../img/court2.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
