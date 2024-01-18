@@ -54,7 +54,7 @@ function App() {
 
       <Router>
         <Switch>
-          <Route path="/" exact component={Card} />
+          <Route path="/" exact component={Home} />
           <Route path="/Team" component={Tax} />
           <Route path="/now" component={CriminalRepresentation} />
           <Route path="/child" component={Minors} />
