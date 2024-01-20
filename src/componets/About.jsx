@@ -19,6 +19,7 @@ function About() {
           <div className="info2">
             <p style={{ textAlign: "right" }}>
               <span
+                className="info2-span"
                 style={{
                   color: "rgb(65, 61, 61)",
                   fontSize: "25px ",
@@ -50,11 +51,7 @@ function About() {
         className="container"
         style={{ marginTop: "20px", paddingTop: "20px" }}
       >
-        <img
-          className="aboutImg scale-on-hover1"
-          src={aboutImg}
-          alt="yosii"
-        />
+        <img className="aboutImg scale-on-hover1" src={aboutImg} alt="yosii" />
         <div className="information">
           <h1 className="h1style">עו"ד יוסי זילברברג </h1>
           <h3 className="h3style">מייסד משהו לא ידוע</h3>

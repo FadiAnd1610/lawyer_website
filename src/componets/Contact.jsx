@@ -135,7 +135,7 @@ function Contact() {
              
             </div>
             <div className="Heading-phone">
-              <h5>עורך דין ליאור משהו </h5>
+              <h5>עורכת דין אפרת משהו </h5>
               <svg
                 className="icon-style"
                 xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@ function Contact() {
               
             </div>
             <div className="Heading-phone">
-              <h5>עורכת דין אפרת משהו </h5>
+              <h5>עורך דין ליאור משהו </h5>
 
               <svg
                 className="icon-style"

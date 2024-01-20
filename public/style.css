@@ -45,8 +45,6 @@
   }
 }
 
-
-
 /*הדף בית!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /*DEATAILS STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -65,7 +63,6 @@
   opacity: 0.9;
   transition: opacity 0.5s ease;
 }
-
 
 .text-container {
   position: absolute;
@@ -129,8 +126,6 @@
   opacity: 1;
 }
 
-
-
 /*INFORMATION STYLEEEEEEEEEEEEEEEEEEEEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .info-container {
   display: flex;
@@ -163,7 +158,6 @@
   margin-left: 240px;
   margin-bottom: 30px;
 }
-
 
 /*Help componet style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* Help.css */
@@ -239,7 +233,6 @@
   transition: transform 0.3s ease; /* Add a smooth transition */
 }
 
-
 /*TEAM STYLEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .team-container {
   margin-bottom: 0px;
@@ -257,7 +250,8 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
-  background-color: rgb(238, 238, 234);
+  background-color: rgb(231, 231, 231);
+
 }
 .team-box-1,
 .team-box-2 {
@@ -273,7 +267,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 40px;
-  background-color: rgb(238, 238, 234);
+  background-color: rgb(231, 231, 231);
 }
 .team-box-2-1 h4 {
   font-size: 15px;
@@ -318,7 +312,6 @@
 /********************************************************************************************************************************/
 
 /*תחומי ההתמחות!!!!!!!!!!!!!!!!!!!!!*/
-
 
 /*CARDS STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -433,14 +426,11 @@ a {
   background-color: #605e5e; /* Adjust color as needed */
 }
 
-
 /*פה נגמר תלומי ההתמחות!!!!!!!!!!!!!!*/
 
 /********************************************************************************************************************************/
 
-
 /*!!!!!!!!!!!!!צוות עורכי הדין*/
-
 
 /*About componet style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -507,14 +497,11 @@ a {
   transform: scale(1.1);
 }
 
-
 /*פה נגמר צוות עורכי הדין!!!!!!!!!!!!!!!!!*/
 
 /********************************************************************************************************************************/
 
-
 /*פה מתחיל הכתבות!!!!!!!!!!!!!!!!!!!!*/
-
 
 /*CONTANT STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .Contant-container {
@@ -640,9 +627,7 @@ a {
 
 /*פה מסיים עם הכתבות!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-
 /********************************************************************************************************************************/
-
 
 /*מתחיל עם היצירת קשר!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -716,6 +701,10 @@ h4 {
 .Heading-opening-days svg {
   margin-left: 10px; /* Add margin-left for spacing between icon and text */
 }
+.Heading-mail a {
+  padding: 5px;
+  margin-bottom: 5px;
+}
 
 .email-link,
 a {
@@ -753,9 +742,11 @@ h3 {
   width: 1499px;
   height: 700px;
 }
+.conact-box-phone h5 {
+  margin-top: 8px;
+}
 
 /*מסיים עם היצירת קשר*/
-
 
 /*TAX STYLEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .tax-container {
@@ -827,7 +818,6 @@ a {
   height: 1px;
   background-color: #605e5e; /* Adjust color as needed */
 }
-
 
 /*
 /*HEADING STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -903,12 +893,6 @@ a {
   font-family: "Libre Baskerville", serif;
   font-family: "Open Sans", sans-serif;
 }
-
-
-
-
-
-
 
 /*clients style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .clients-container {
@@ -1052,8 +1036,6 @@ a {
   color: white;
 }
 
-
-
 /*FOOTER STYLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .footer-container {
   background-color: #232323;
@@ -1106,7 +1088,6 @@ let Componet;
   */
 
 /**************************************************************************************************************************/
-
 
 /*סטייל עבוד מסכים גדולים*/
 
@@ -1202,184 +1183,436 @@ let Componet;
   }
 }
 
-@media only screen
-  and (device-width: 1024px)
-  and (device-height: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    /* Your styles for iPad Pro 12.9-inch (landscape) */
-    .all-cards {
-      gap: 50px;
-    }
-    .all-cards-subject {
-      margin-top: 150px;
-      margin-left: 30px;
-    }
-    .cards {
-      margin-right: 35px;
-    }
-    .cards a {
-      margin-right: 300px;
-      border: 2px solid rgb(108, 108, 33);
-      color: white;
-      background-color: #373a40;
-      padding: 7px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-decoration: none;
-    }
-    .text-container {
-      position: absolute;
-      top: 23%;
-      left: 49%;
-    }
-    .text-container h1 {
-      font-size: 60px;
-    }
-    .text-container h3 {
-      font-size: 40px;
-    }
-    .text-container h4 {
-      font-size: 50px;
-    }
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .aboutImg {
-      width: 50%; /* Make the image take full width */
-      margin-bottom: 20px; /* Add some space below the image */
-    }
-  
-    .information {
-      width: 100%; /* Make the information div take full width */
-      margin-bottom: 15px;
-    }
-  
-    .info2 {
-      text-align: right;
-      padding: 0 10px; /* Add padding for better readability */
-    }
-    .Help-elements > div {
-      width: 150px;
-      text-align: center;
-      padding: 20px;
-      border-radius: 30px;
-      margin-bottom: 15px;
-      box-shadow: -30px 10px 20px -10px rgba(0, 0, 0, 0.75);
-      background-color: rgb(206, 200, 200);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-    }
-  
-    .contant-1 {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-top: -15px;
-      padding-bottom: 105px;
-    }
-    .contant-2 {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-left: 50px;
-      padding-bottom: 150px;
-    }
-    .contant-3 {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-left: 50px;
-    }
-    .contant-3 .contant-3-img1 {
-      padding-bottom: 0px;
-    }
-    .contant-3 .contant-3-img2 {
-      margin-top: -30px;
-    }
-    .contant-3 .contant-3-img3 {
-      padding-bottom: 45px;
-    }
-    .Contant-container h1 {
-      margin-left: 140px;
-    }
-    .contant-2 .contant-2-img1 {
-      padding-bottom: 0px;
-    }
-    .contant-2 .contant-2-img2 {
-      margin-top: -30px;
-    }
-    .contant-2 .contant-2-img3 {
-      padding-bottom: 45px;
-    }
-  
-    .Contant-container-fix {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: -30px;
-    }
-  
-    .contact-box-adress h5 {
-      font-size: 15px;
-    }
-    .contact-image img {
-      width: 960px;
-      height: 400px;
-    }
-  
-    .contact-image a {
-      margin-right: 380px;
-      text-decoration: underline;
-      color: rgb(65, 65, 184);
-    }
-    .contact-image iframe {
-      width: 1002px;
-      height: 400px;
-    }
-    .contact-container {
-      margin-bottom: 0;
-      max-width: 100%;
-    }
-    .Heading-phone h5 {
-      font-size: 10px;
-      margin-top: 3px;
-      padding-top: 5px;
-    }
-    .Heading-phone {
-      font-size: 8px;
-    }
-    .Heading-phone .icon-style {
-      margin-left: 2px;
-    }
-    .Help-elements > div {
-      width: 210px;
-    }
-    .Help-elements-4 {
-      height: 360px;
-    }
-    .Help-elements-4 h2 {
-      margin-bottom: -px;
-    }
-    .info-container {
-      flex-direction: column-reverse; /* Change flex direction to column-reverse */
-      margin: 20px;
-      font-size: 20px;
-    }
-  
-    .info-img {
-      width: 100%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  
-    .info-text {
-      width: 100%;
-    }
-  
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Your styles for iPad Pro 12.9-inch (landscape) */
+  .all-cards {
+    gap: 50px;
+  }
+  .all-cards-subject {
+    margin-top: 150px;
+    margin-left: 30px;
+  }
+  .cards {
+    margin-right: 35px;
+  }
+  .cards a {
+    margin-right: 300px;
+    border: 2px solid rgb(108, 108, 33);
+    color: white;
+    background-color: #373a40;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+  }
+  .text-container {
+    position: absolute;
+    top: 23%;
+    left: 49%;
+  }
+  .text-container h1 {
+    font-size: 60px;
+  }
+  .text-container h3 {
+    font-size: 40px;
+  }
+  .text-container h4 {
+    font-size: 50px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutImg {
+    width: 50%; /* Make the image take full width */
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+
+  .information {
+    width: 100%; /* Make the information div take full width */
+    margin-bottom: 15px;
+  }
+
+  .info2 {
+    text-align: right;
+    padding: 0 10px; /* Add padding for better readability */
+  }
+  .Help-elements > div {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    box-shadow: -30px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    background-color: rgb(206, 200, 200);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .contant-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -15px;
+    padding-bottom: 105px;
+  }
+  .contant-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    padding-bottom: 150px;
+  }
+  .contant-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .contant-3 .contant-3-img1 {
+    padding-bottom: 0px;
+  }
+  .contant-3 .contant-3-img2 {
+    margin-top: -30px;
+  }
+  .contant-3 .contant-3-img3 {
+    padding-bottom: 45px;
+  }
+  .Contant-container h1 {
+    margin-left: 140px;
+  }
+  .contant-2 .contant-2-img1 {
+    padding-bottom: 0px;
+  }
+  .contant-2 .contant-2-img2 {
+    margin-top: -30px;
+  }
+  .contant-2 .contant-2-img3 {
+    padding-bottom: 45px;
+  }
+
+  .Contant-container-fix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+  }
+
+  .contact-box-adress h5 {
+    font-size: 15px;
+  }
+  .contact-image img {
+    width: 960px;
+    height: 400px;
+  }
+
+  .contact-image a {
+    margin-right: 380px;
+    text-decoration: underline;
+    color: rgb(65, 65, 184);
+  }
+  .contact-image iframe {
+    width: 1002px;
+    height: 400px;
+  }
+  .contact-container {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+  .Heading-phone h5 {
+    font-size: 10px;
+    margin-top: 3px;
+    padding-top: 5px;
+  }
+  .Heading-phone {
+    font-size: 8px;
+  }
+  .Heading-phone .icon-style {
+    margin-left: 2px;
+  }
+  .Help-elements > div {
+    width: 210px;
+  }
+  .Help-elements-4 {
+    height: 360px;
+  }
+  .Help-elements-4 h2 {
+    margin-bottom: -px;
+  }
+  .info-container {
+    flex-direction: column-reverse; /* Change flex direction to column-reverse */
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  .info-img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-text {
+    width: 100%;
+  }
 }
+/*IPAD PRO*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    /*מייצר פה מרווח בהאדינג שמותאם לטלפון*/
+  .Heading-container .Heading-alements {
+    gap: 100px;
+    font-size: 10px;
+  }
+  .Heading-opening-days .s {
+    margin-top: 5px;
+  }
+  .swiper-slide {
+    margin-right: 15px; /* Further adjust the spacing for screens between 768px and 1023px */
+  }
+  .text-container {
+    position: absolute;
+    top: 23%;
+    left: 49%;
+  }
+  .text-container h1 {
+    font-size: 60px;
+  }
+  .text-container h3 {
+    font-size: 40px;
+  }
+  .text-container h4 {
+    font-size: 50px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImg {
+    width: 50%; /* Make the image take full width */
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+
+  .information {
+    width: 100%; /* Make the information div take full width */
+    margin-bottom: 15px;
+  }
+
+  .info2 {
+    text-align: right;
+    padding: 0 10px; /* Add padding for better readability */
+  }
+  .Help-elements > div {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    box-shadow: -30px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    background-color: rgb(206, 200, 200);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .contant-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -15px;
+    padding-bottom: 105px;
+  }
+  .contant-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    padding-bottom: 150px;
+  }
+  .contant-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .contant-3 .contant-3-img1 {
+    padding-bottom: 0px;
+  }
+  .contant-3 .contant-3-img2 {
+    margin-top: -30px;
+  }
+  .contant-3 .contant-3-img3 {
+    padding-bottom: 45px;
+  }
+  .Contant-container h1 {
+    margin-left: 10px;
+  }
+  .contant-2 .contant-2-img1 {
+    padding-bottom: 0px;
+  }
+  .contant-2 .contant-2-img2 {
+    margin-top: -30px;
+  }
+  .contant-2 .contant-2-img3 {
+    padding-bottom: 45px;
+  }
+
+  .Contant-container-fix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+  }
+
+  .contact-box-adress h5 {
+    font-size: 15px;
+  }
+  .contact-image img {
+    width: 960px;
+    height: 400px;
+  }
+
+  .contact-image a {
+    margin-right: 350px;
+    text-decoration: underline;
+    color: rgb(65, 65, 184);
+  }
+  .contact-image iframe {
+    width: 960px;
+    height: 400px;
+  }
+  .contact-container {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+  .Heading-phone h5 {
+    font-size: 10px;
+    margin-top: 3px;
+    padding-top: 5px;
+  }
+  .Heading-phone {
+    font-size: 8px;
+  }
+  .Heading-phone .icon-style {
+    margin-left: 2px;
+  }
+  .Help-elements > div {
+    width: 210px;
+  }
+  .Help-elements-4 {
+    height: 360px;
+  }
+  .Help-elements-4 h2 {
+    margin-bottom: -px;
+  }
+  .info-container {
+    flex-direction: column-reverse; /* Change flex direction to column-reverse */
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  .info-img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-text {
+    width: 100%;
+  }
+  .all-cards {
+    gap: 50px;
+  }
+  .all-cards-subject {
+    margin-left: 30px;
+    margin-bottom: 3200px;
+
+  }
+  .all-cards-subject a {
+    text-align: center;
+  }
+  .cards {
+    margin-right: 35px;
+  }
+ 
+
+  .footer-container2 {
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+
+  .info-text h1 {
+    font-size: 50px;
+    margin-left: 20px;
+  }
+
+  .info-text p {
+    width: 90%;
+    font-size: 40px;
+  }
+
+  .Help-elements > div {
+    width: 270px;
+  }
+  .Help-container p {
+    font-size: 27px;
+  }
+  .Help-elements h2 {
+    font-size: 35px;
+  }
+
+  .cards h2 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .cards p {
+    font-size: 25px;
+  }
+  .cards a {
+    margin-right: 290px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .tax-container{
+    margin-top: 50px;
+  }
+  .tax-subject {
+    margin-top: 20px;
+  }
+  .tax-subject a {
+    text-align: center;
+  }
+  .tax-container-text p {
+    font-size: 25px;
+  }
+  .information h3 {
+    font-size: 25px;
+  }
+  .info2 p {
+    font-size: 28px;
+  }
+
+  .Heading-phone button {
+    font-size: 10px;
+  }
+  .nav-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+
 
 /*iphone*/
 @media only screen and (min-device-width: 350px) and (max-device-width: 900px) {
@@ -1387,7 +1620,6 @@ let Componet;
   .Heading-container .Heading-alements {
     gap: 100px;
     font-size: 10px;
-    
   }
   .Heading-opening-days .s {
     margin-top: 5px;
@@ -1550,26 +1782,70 @@ let Componet;
     gap: 50px;
   }
   .all-cards-subject {
-    margin-top: 150px;
     margin-left: 30px;
+  }
+  .all-cards-subject a {
+    text-align: center;
   }
   .cards {
     margin-right: 35px;
   }
-  .cards a {
-    margin-right: 300px;
-    border: 2px solid rgb(108, 108, 33);
-    color: white;
-    background-color: #373a40;
-    padding: 7px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-  }
+ 
 
   .footer-container2 {
     margin-top: 80px;
     margin-bottom: 0px;
+  }
+
+  .info-text h1 {
+    font-size: 50px;
+    margin-left: 20px;
+  }
+
+  .info-text p {
+    width: 90%;
+    font-size: 40px;
+  }
+
+  .Help-elements > div {
+    width: 270px;
+  }
+  .Help-container p {
+    font-size: 27px;
+  }
+  .Help-elements h2 {
+    font-size: 35px;
+  }
+
+  .cards h2 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .cards p {
+    font-size: 25px;
+  }
+  .cards a {
+    margin-right: 290px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .tax-container{
+    margin-top: 50px;
+  }
+  .tax-subject {
+    margin-top: 20px;
+  }
+  .tax-subject a {
+    text-align: center;
+  }
+  .tax-container-text p {
+    font-size: 25px;
+  }
+  .information h3 {
+    font-size: 25px;
+  }
+  .info2 p {
+    font-size: 28px;
   }
 }
